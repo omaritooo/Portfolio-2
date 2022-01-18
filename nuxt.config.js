@@ -28,6 +28,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    { src: './plugins/aos.js', ssr: 'false' }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -37,18 +38,55 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/fontawesome'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+
   ],
+  router: {
+    scrollBehavior(to) {
+      if (to.hash) {
+        return window.scrollTo({
+          top: document.querySelector(to.hash).offsetTop,
+          behavior: 'smooth'
+        })
+      }
+      return window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+  },
+  fontawesome: {
+    icons: {
+      regular: ['faEnvelope'],
+      brands: [
+        "faFacebook",
+        "faFacebookF",
+        "faFacebookMessenger",
+        "faInstagram",
+        "faLinkedinIn",
+        "faGithub",
+        "faBehance",
+        "faWhatsapp",
+        "faPinterest",
+        "faTelegramPlane"
+      ],
+      solid: ['faArrowRight', 'faTimes']
+    }
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+    loaders: {
+
+      scss: {
+        implementation: require('sass'),
+      },
+    },
+  },
 }
