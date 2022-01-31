@@ -1,34 +1,162 @@
 <template>
-    <div class="lg:px-64 bg-site-blue dark:bg-site-black">
+    <div class="py-12 lg:px-64 bg-site-blue dark:bg-site-black">
         <h1 class="mx-auto text-5xl text-center underline--magical text-site-white">Portfolio</h1>
-        <div></div>
+        <div
+            class="w-1/3"
+            data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+        >
+            <img
+                class="w-full"
+                src="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png"
+                alt
+            />
+            <div class="flex flex-col text-site-white gap-y-5">
+                <div class="w-full">
+                    <h1 class="text-3xl text-center text-site-white">Title</h1>
+                </div>
+                <div class="w-full">
+                    <p
+                        class="text-lg whitespace-normal text-clip"
+                    >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae cursus ligula. Duis ac quam condimentum, fermentum mauris sit amet, laoreet nisi. Nam nec metus.</p>
+                </div>
+            </div>
+            <div class="flex justify-center my-5 gap-x-5">
+                <img
+                    class="p-2 rounded-full shadow-lg w-14 h-14 bg-site-white"
+                    src="/tailwindcss-icon.svg"
+                    alt
+                />
+                <img
+                    class="p-2 rounded-full shadow-lg w-14 h-14 bg-site-white"
+                    src="/Nuxt_logo.svg"
+                    alt="tailwind"
+                />
+                <img
+                    class="p-2 rounded-full shadow-lg w-14 h-14 bg-site-white"
+                    src="/axios.svg"
+                    alt
+                />
+            </div>
+        </div>
+        <div
+            class="w-1/3 ml-auto"
+            data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+        >
+            <img
+                class="w-full"
+                src="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png"
+                alt
+            />
+            <div class="flex flex-col text-site-white gap-y-5">
+                <div class="w-full">
+                    <h1 class="text-3xl text-center text-site-white">Title</h1>
+                </div>
+                <div class="w-full">
+                    <p
+                        class="text-lg whitespace-normal text-clip"
+                    >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae cursus ligula. Duis ac quam condimentum, fermentum mauris sit amet, laoreet nisi. Nam nec metus.</p>
+                </div>
+            </div>
+            <div class="flex justify-center my-5 ml-auto gap-x-5">
+                <img
+                    class="p-2 rounded-full shadow-lg w-14 h-14 bg-site-white"
+                    src="/tailwindcss-icon.svg"
+                    alt
+                />
+                <img
+                    class="p-2 rounded-full shadow-lg w-14 h-14 bg-site-white"
+                    src="/Nuxt_logo.svg"
+                    alt="tailwind"
+                />
+                <img
+                    class="p-2 rounded-full shadow-lg w-14 h-14 bg-site-white"
+                    src="/axios.svg"
+                    alt
+                />
+            </div>
+        </div>
+        <div
+            class="w-1/3"
+            data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+        >
+            <img
+                class="w-full"
+                src="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png"
+                alt
+            />
+            <div class="flex flex-col text-site-white gap-y-5">
+                <div class="w-full">
+                    <h1 class="text-3xl text-center text-site-white">Title</h1>
+                </div>
+                <div class="w-full">
+                    <p
+                        class="text-lg whitespace-normal text-clip"
+                    >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae cursus ligula. Duis ac quam condimentum, fermentum mauris sit amet, laoreet nisi. Nam nec metus.</p>
+                </div>
+            </div>
+            <div class="flex justify-center my-5 gap-x-5">
+                <img
+                    class="p-2 rounded-full shadow-lg w-14 h-14 bg-site-white"
+                    src="/tailwindcss-icon.svg"
+                    alt
+                />
+                <img
+                    class="p-2 rounded-full shadow-lg w-14 h-14 bg-site-white"
+                    src="/Nuxt_logo.svg"
+                    alt="tailwind"
+                />
+                <img
+                    class="p-2 rounded-full shadow-lg w-14 h-14 bg-site-white"
+                    src="/axios.svg"
+                    alt
+                />
+            </div>
+        </div>
+        <!-- <div
+            class="ml-auto w-max"
+            data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+        >
+            <img
+                src="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png"
+                alt
+            />
+        </div>
+        <div
+            class="w-max"
+            data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+        >
+            <img
+                src="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png"
+                alt
+            />
+        </div>-->
     </div>
 </template>
 
 <script>
-import axios from 'axios'
 export default {
-    data() {
-        return {
-            test: []
-        }
-    },
-    mounted() {
-        axios
-            .get(
-                'https://api.spotify.com/v1/me/player/currently-playing', {
-                params: { limit: 50, offset: 0 },
-                headers: {
-                    Accept: 'application/json',
-                    Authorization: 'Bearer ' + 'BQAdHKFQpUbSM7gR2ym7-s_4kXqJV7j0PbPVtMR1q2UqyiuByZz7wZtVaXhQbXoLMPMU2EfSepWAGJzdfKKBwPENm7EhqPB_XdIlKFxL7fsr5vdOoFzm4XgL2XqijoPZZjxy9CZZki5UC-1wQKEDdw',
-                    'Content-Type': 'application/json',
-                },
-            }).then((data) => this.test = data.data)
 
 
-    },
+
 
 }
+
+
 </script>
 
 <style>

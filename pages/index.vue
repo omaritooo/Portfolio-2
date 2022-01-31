@@ -1,4 +1,4 @@
-<template  >
+<template >
   <div
     :class="this.$store.state.mode ? '' : 'dark'"
     class="transition duration-200 ease-in-out dark:bg-site-black bg-site-white"
