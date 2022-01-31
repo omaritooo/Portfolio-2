@@ -3,7 +3,7 @@
         <h1 class="mx-auto text-5xl text-center underline--magical text-site-white">Portfolio</h1>
         <div
             class="w-1/3"
-            data-aos="fade-up"
+            data-aos="fade-right"
             data-aos-delay="50"
             data-aos-duration="500"
             data-aos-easing="ease-in-out"
@@ -43,7 +43,7 @@
         </div>
         <div
             class="w-1/3 ml-auto"
-            data-aos="fade-up"
+            data-aos="fade-left"
             data-aos-delay="50"
             data-aos-duration="500"
             data-aos-easing="ease-in-out"
@@ -83,7 +83,7 @@
         </div>
         <div
             class="w-1/3"
-            data-aos="fade-up"
+            data-aos="fade-right"
             data-aos-delay="50"
             data-aos-duration="500"
             data-aos-easing="ease-in-out"

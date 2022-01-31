@@ -10,6 +10,7 @@
     <Skills />
     <Portfolio />
     <Navbar class="absolute top-0 z-20 w-full" />
+    <Progress/>
     <!-- <div
       class="transition duration-200 ease-in-out lg:p-96 dark:bg-site-black bg-site-white"
     ></div>-->

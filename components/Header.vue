@@ -56,9 +56,9 @@
               class="under"
             >front end developer</span>.
           </p>
-          <a class href="/resume.pdf" download="resume">
+          <a class="w-max" href="/resume.pdf" download="resume">
             <button
-              class="p-4 transition duration-100 ease-in-out rounded-lg shadow-xl text-site-white bg-site-blue dark:bg-site-grey hover:-translate-y-2 lg:mr-auto"
+              class="w-full p-4 transition duration-100 ease-in-out rounded-lg shadow-xl text-site-white bg-site-blue dark:bg-site-grey hover:-translate-y-2 lg:mr-auto"
             >Download Resume</button>
           </a>
         </div>
